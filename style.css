@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: monospace;
     font-size: 18px;
+    background-color: rgb(20, 42, 62);
+    color: #ffffff;
 }
 
 img {
@@ -12,4 +14,41 @@ img {
 
 input {
     display: none;
+}
+
+.slider, .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.slider__wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.slider__item {
+    display: none;
+}
+
+.slider__item img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+
+} 
+
+#first:checked ~ .slider__items > .first, 
+#second:checked ~ .slider__items > .second, 
+#third:checked ~ .slider__items > .third, 
+#fourth:checked ~ .slider__items > .fourth {
+    display: block;
+}
+
+header {
+    border-bottom: 2px dashed #ffffff;
+}
+
+footer {
+    border-top: 2px dashed #ffffff;
 }
