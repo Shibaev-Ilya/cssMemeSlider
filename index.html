@@ -19,29 +19,34 @@
                 <input type="radio" name="control" id="second">
                 <input type="radio" name="control" id="third">
                 <input type="radio" name="control" id="fourth">
-                <div class="slider__items">
-                    <div class="slider__item first">
-                        <img src="/images/1.webp" alt="meme">
-                        <p>Lovely Gradma</p>
+                <div class="slider__inner">
+                    <div class="slider__images">
+                        <div class="slider__item" data-slider-id="1" style="background-image: url('/images/1.webp');">
+                            <img src="/images/1.webp" alt="meme">
+                            
+                        </div>
+                        <div class="slider__item" data-slider-id="2" style="background-image: url('/images/2.webp');">
+                            <img src="/images/2.webp" alt="meme">
+                        </div>
+                        <div class="slider__item" data-slider-id="3" style="background-image: url('/images/3.webp');">
+                            <img src="/images/3.webp" alt="meme">
+                        </div>
+                        <div class="slider__item" data-slider-id="4" style="background-image: url('/images/4.webp');">
+                            <img src="/images/4.webp" alt="meme">
+                        </div>
                     </div>
-                    <div class="slider__item second">
-                        <img src="/images/2.webp" alt="meme">
-                        <p>Musician</p>
+                    <div class="slider__text">
+                        <p class="slider__item-text" data-slider-id="1">Lovely Gradma</p>
+                        <p class="slider__item-text" data-slider-id="2">Musician</p>
+                        <p class="slider__item-text" data-slider-id="3">States</p>
+                        <p class="slider__item-text" data-slider-id="4">WHY???</p>
                     </div>
-                    <div class="slider__item third">
-                        <img src="/images/3.webp" alt="meme">
-                        <p>States</p>
+                    <div class="slider__controls">
+                        <label class="button" data-slider-id="1" for="first"><span></span></label>
+                        <label class="button" data-slider-id="2" for="second"><span></span></label>
+                        <label class="button" data-slider-id="3" for="third"><span></span></label>
+                        <label class="button" data-slider-id="4" for="fourth"><span></span></label>
                     </div>
-                    <div class="slider__item fourth">
-                        <img src="/images/4.webp" alt="meme">
-                        <p>WHY???</p>
-                    </div>
-                </div>
-                <div class="slider__controls">
-                    <label class="button button_1" for="first"><span>1</span></label>
-                    <label class="button button_2" for="second"><span>2</span></label>
-                    <label class="button button_3" for="third"><span>3</span></label>
-                    <label class="button button_4" for="fourth"><span>4</span></label>
                 </div>
             </div>
         </section>
