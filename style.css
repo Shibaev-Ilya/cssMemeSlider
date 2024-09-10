@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: monospace;
     font-size: 18px;
-    background-color: rgb(20, 42, 62);
+    background-color: rgb(38, 39, 41);
     color: #ffffff;
 }
 
@@ -51,4 +51,44 @@ header {
 
 footer {
     border-top: 2px dashed #ffffff;
+}
+
+.slider__controls {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #056fb6;
+    background-color: #056fb6;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.button:active {
+    background-color: #8f8f8f;
+    border-color: #8f8f8f;
+}
+
+.button span {
+    opacity: 0;
+}
+
+#first:checked ~ .slider__controls > .button_1, 
+#second:checked ~ .slider__controls > .button_2, 
+#third:checked ~ .slider__controls > .button_3, 
+#fourth:checked ~ .slider__controls > .button_4 {
+    border: 4px solid #056fb6;
+    background-color: transparent;
 }
