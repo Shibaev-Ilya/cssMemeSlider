@@ -41,15 +41,6 @@ input {
 .slider__wrapper {
     margin-top: 4rem;
     margin-bottom: 4rem;
-    overflow: hidden;
-}
-
-.slider__item {
-    background-size: cover;
-    border-radius: 1rem;
-    width: 0;
-    opacity: 0;
-    transition: opacity, 1s;
 }
 
 .slider__item img {
@@ -65,11 +56,20 @@ input {
 .slider__images {
     grid-column: 1 / -1;
     display: flex;
+    max-width: calc(100vw - 4rem);
 }
 
 .slider__text {
     display: flex;
     align-items: center;
+}
+
+.slider__item {
+    background-size: cover;
+    border-radius: 1rem;
+    width: 0;
+    opacity: 0;
+    transition: opacity 1.5s;
 }
 
 #first:checked ~ .slider__inner > .slider__images > [data-slider-id="1"], 
@@ -93,15 +93,6 @@ footer {
     justify-content: flex-end;
     align-items: center;
     gap: 0.5rem;
-}
-
-.slider__item-text {
-    display: block;
-    white-space: nowrap;
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity, 1s;
 }
 
 .button {
@@ -131,6 +122,15 @@ footer {
     transition: 0.4s;
 }
 
+.slider__item-text {
+    display: block;
+    white-space: nowrap;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 1.5s;
+}
+
 #first:checked ~ .slider__inner > .slider__text > [data-slider-id="1"], 
 #second:checked ~ .slider__inner > .slider__text > [data-slider-id="2"], 
 #third:checked ~ .slider__inner > .slider__text > [data-slider-id="3"], 
@@ -155,6 +155,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
+    overflow: hidden;
 }
 
 @media (max-width: 475px) {
