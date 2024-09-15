@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssMemeSlider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LosCotletos cssMemeSlider</h1>
+        </div>
+    </header>
+    <main>
+        <section class="slider">
+            <div class="slider__wrapper">
+                <input type="radio" name="control" id="first" checked>
+                <input type="radio" name="control" id="second">
+                <input type="radio" name="control" id="third">
+                <input type="radio" name="control" id="fourth">
+                <div class="slider__inner">
+                    <div class="slider__images">
+                        <div class="slider__item" data-slider-id="1">
+                            <img src="./images/1.webp" alt="meme">
+                        </div>
+                        <div class="slider__item" data-slider-id="2">
+                            <img src="./images/2.webp" alt="meme">
+                        </div>
+                        <div class="slider__item" data-slider-id="3">
+                            <img src="./images/3.webp" alt="meme">
+                        </div>
+                        <div class="slider__item" data-slider-id="4">
+                            <img src="./images/4.webp" alt="meme">
+                        </div>
+                    </div>
+                    <div class="slider__text">
+                        <p class="slider__item-text" data-slider-id="1">Lovely Gradma</p>
+                        <p class="slider__item-text" data-slider-id="2">Musician</p>
+                        <p class="slider__item-text" data-slider-id="3">States</p>
+                        <p class="slider__item-text" data-slider-id="4">WHY???</p>
+                    </div>
+                    <div class="slider__controls">
+                        <label class="button" data-slider-id="1" for="first"><span></span></label>
+                        <label class="button" data-slider-id="2" for="second"><span></span></label>
+                        <label class="button" data-slider-id="3" for="third"><span></span></label>
+                        <label class="button" data-slider-id="4" for="fourth"><span></span></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+        <p>LosCotletos© 2024</p>
+    </div>
+    </footer>
+    <script>
+        console.log(new Date);
+    </script>
+    
+</body>
+</html>
