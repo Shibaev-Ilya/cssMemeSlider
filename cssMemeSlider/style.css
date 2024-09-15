@@ -159,7 +159,7 @@ footer {
     overflow: hidden;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 500px) {
     .slider__inner {
         grid-template-columns: 1fr;
     } 
